@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:color="#000080"
+    android:gravity="center">
+
+
+
+    <TextView
+        android:id="@+id/tvMainNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        tools:background="#03A9F4"
+        android:text="Hola Luis" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        tools:textSize="60sp"
+        android:background="#008000"
+        tools:background="#FF5722"
+        android:text="Hola Luis" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        tools:background="#03A9F4"
+        android:text="Hola Luis" />
+
+    <EditText
+        android:hint="Escribe tu nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="#FFFFFF"
+
+        />
+</LinearLayout>

@@ -5,12 +5,10 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <ImageView
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/frameLogo"
-        android:layout_width="160dp"
-        android:layout_height="120dp"
-        android:src="@drawable/platzi"/>
+    <include
+        android:id="@+id/include_logo"
+        layout="@layout/include_logo"/>
+
     <EditText
         android:id="@+id/frameUsername"
         android:layout_width="match_parent"

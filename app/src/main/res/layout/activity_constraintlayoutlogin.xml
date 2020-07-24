@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,19 +8,18 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="160dp"
-        android:layout_height="120dp"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/height_logo"
         android:src="@drawable/platzi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        style="@style/AppTheme.EditTextStyle"
         android:id="@+id/eTextUsername"
+        style="@style/AppTheme.EditTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
         android:drawableStart="@drawable/vector_person"
         android:hint="@string/hint_usuario"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,17 +30,29 @@
         style="@style/AppTheme.EditTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="14dp"
         android:drawableStart="@drawable/vector_lock"
         android:hint="@string/hint_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/eTextUsername" />
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/me"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/eTextUsername"
+        android:layout_margin="@dimen/default_margin"/>
+
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_margin="@dimen/default_margin"
         android:background="@color/colorPrimary"
         android:text="@string/button_login"
         app:layout_constraintBottom_toBottomOf="parent"
